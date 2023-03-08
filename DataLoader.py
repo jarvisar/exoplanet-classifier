@@ -25,14 +25,12 @@ class ExoplanetDataset(Dataset):
         inputs = (inputs - self.mean) / self.std
 
         if self.is_test:
-            return inputs
+            return inputs # for new data (planet type still unknown)
         else:
-            # Get target (planet type)
+            # Get target from training data (planet type)
             target = self.df.iloc[idx, -1]
             target = label_map[target]
             target = round(float(target))
             target = torch.tensor(target, dtype=torch.long)
 
             return inputs, target
-
-dataset = ExoplanetDataset('exoplanet_data.csv', label_map)
