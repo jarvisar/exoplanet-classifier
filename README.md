@@ -2,7 +2,7 @@
 
 This project uses [PyTorch](https://pytorch.org/) to classify exoplanets based on their mass, radius, and density. The dataset used for this project was provided by [NASA's Exoplanet Archive](https://exoplanetarchive.ipac.caltech.edu/).
 
-This is my first PyTorch and deep learning project. Exoplanet classification predictions made by this model may or may not be correct due to limited training data. This project is solely for educational and demonstration purposes, showcasing the use of PyTorch and deep learning techniques for exoplanet classification.
+This is my first PyTorch and deep learning project. Exoplanet classification predictions made by this model may or may not be correct due to limited training data. This project is solely for educational and demonstration purposes.
 
 ### DataLoader
 
