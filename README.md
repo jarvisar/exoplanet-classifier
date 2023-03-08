@@ -45,13 +45,16 @@ To run the exoplanet classifier on a local machine, follow these steps:
 
 	`cd exoplanet-classifier`
     
-3. Configure the training set `exoplanet_data.csv` and new data `new_data.csv`. 
+3. Configure the training set `exoplanet_data.csv`. 
     
 4. Run the main.py file to start the classifier:
 
 	`python main.py`
    
-   
+5. Next, enter exoplanet parameters in the format "mass Re,radius Me,density g/cm<sup>3</sup>" to classify the exoplanet:
+
+	`>> 250,13.9,0.512`
+	`jovian`
    
 ### Known Issues & Limitations
 
