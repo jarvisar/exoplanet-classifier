@@ -27,8 +27,7 @@ model = ExoplanetClassifier()
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001)
 
-# Train model on exoplanet data
-for epoch in range(10):
+for epoch in range(100):
     running_loss = 0.0
     for i, data in enumerate(train_loader):
         # Get inputs and targets from data loader
@@ -52,6 +51,7 @@ for epoch in range(10):
         if i % 1000 == 999:
             print('[%d, %5d] loss: %.3f' % (epoch + 1, i + 1, running_loss / 1000))
             running_loss = 0.0
+
 
 # Save the trained model
 torch.save(model.state_dict(), 'exoplanet_classifier.pth')
