@@ -57,7 +57,7 @@ To run the exoplanet classifier on a local machine, follow these steps:
 
 The training data used in this project is limited due to the difficulty of manually gathering exoplanet data and correctly classifying it. As a result, the model's performance may be limited by the small dataset size.
 
-This project is intended to serve as a demonstration of PyTorch and deep learning techniques for exoplanet classification. It was undertaken as a personal interest project to develop my skills in PyTorch and deep learning. The project demonstrates proficiency in Python and my ability to implement a fully connected neural network model for exoplanet classification. While the training dataset used in this project is limited, the techniques used and the models developed provide a strong foundation for further exploration and analysis in the future.
+This project is intended to serve as a demonstration of PyTorch and deep learning techniques for exoplanet classification. It was undertaken as a personal interest project to develop my skills in PyTorch and deep learning. The project demonstrates proficiency in Python and my ability to implement a fully connected neural network model for exoplanet classification. Even though the training dataset used in this project is limited, the techniques used and the models developed in this project provide a strong foundation for further exploration and analysis in the future.
      
 <br>
 
