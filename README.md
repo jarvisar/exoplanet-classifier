@@ -59,6 +59,7 @@ The training data used in this project is limited due to the difficulty of manua
 
 This project is intended to serve as a demonstration of PyTorch and deep learning techniques for exoplanet classification. It was undertaken as a personal interest project to develop my skills in PyTorch and deep learning. The project demonstrates proficiency in Python and my ability to implement a fully connected neural network model for exoplanet classification. While the training dataset used in this project is limited, the techniques used and the models developed provide a strong foundation for further exploration and analysis in the future.
      
+<br>
 
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Pytorch_logo.png"/>
