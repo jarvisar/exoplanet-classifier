@@ -9,7 +9,7 @@ label_map = {'asteroidan': 0, 'mercurian': 1, 'subterran': 2, 'terran': 3, 'supe
 # Convert the new data into PyTorch dataset and dataloader
 new_dataset = ExoplanetDataset('new_data.csv', is_test=True)
 new_dataloader = DataLoader(new_dataset, batch_size=1)
-model = ExoplanetClassifier()
+model = ExoplanetClassifier(num_layers=4)
 # Use the pre-trained model to make predictions
 with torch.no_grad():
     for inputs in new_dataloader:

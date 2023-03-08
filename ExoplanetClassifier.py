@@ -2,22 +2,27 @@ import torch.nn as nn
 import torch.optim as optim
 from DataLoader import ExoplanetDataset
 import torch
+import torch.nn.functional as F
 
 label_map = {'asteroidan': 0, 'mercurian': 1, 'subterran': 2, 'terran': 3, 'superterran': 4, 'neptunian': 5, 'jovian': 6}
 
 # Define fully connected neural network model
+
+
 class ExoplanetClassifier(nn.Module):
-    def __init__(self):
+    def __init__(self, num_layers=3, input_size=3, hidden_size=64, output_size=7):
         super(ExoplanetClassifier, self).__init__()
-        self.fc1 = nn.Linear(3, 64)
-        self.fc2 = nn.Linear(64, 32)
-        self.fc3 = nn.Linear(32, 7)
+        self.input_layer = nn.Linear(input_size, hidden_size)
+        self.hidden_layers = nn.ModuleList([nn.Linear(hidden_size, hidden_size) for _ in range(num_layers-2)])
+        self.output_layer = nn.Linear(hidden_size, output_size)
 
     def forward(self, x):
-        x = nn.functional.relu(self.fc1(x))
-        x = nn.functional.relu(self.fc2(x))
-        x = self.fc3(x)
+        x = F.relu(self.input_layer(x))
+        for hidden_layer in self.hidden_layers:
+            x = F.relu(hidden_layer(x))
+        x = self.output_layer(x)
         return x
+
 
 # Load training data
 train_loader = ExoplanetDataset('exoplanet_data.csv')
