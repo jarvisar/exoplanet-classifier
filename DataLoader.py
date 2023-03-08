@@ -2,6 +2,7 @@ label_map = {'asteroidan': 0, 'mercurian': 1, 'subterran': 2, 'terran': 3, 'supe
 from torch.utils.data import Dataset, DataLoader
 import pandas as pd
 import torch
+from torch.utils.data import DataLoader
 
 class ExoplanetDataset(Dataset):
     def __init__(self, csv_file, is_test=False):
