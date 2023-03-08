@@ -31,7 +31,6 @@ The model is evaluated on the validation set after each epoch of training. The v
 
 * Calculate the accuracy of the model by comparing the predicted labels with the true labels
 
-
 The trained model is saved to a file named `exoplanet_classifier.pth` using the `torch.save` function.
 
 ## How to Use
