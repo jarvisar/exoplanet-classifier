@@ -1,5 +1,7 @@
 # exoplanet-classifier
-PyTorch Program to Classify Exoplanets by Planet Type
+PyTorch program for classifying exoplanets by planet type using deep learning and exoplanet data such as planet radius, mass, and density.
+
+My first PyTorch and Deep Learning project.
 
 <br>
 
