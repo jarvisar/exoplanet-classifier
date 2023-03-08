@@ -15,5 +15,4 @@ with torch.no_grad():
     for inputs in new_dataloader:
         predictions = model(inputs)
         predicted_classes = predictions.argmax(dim=1)
-        print(predicted_classes.item())
         print(list(label_map.keys())[list(label_map.values()).index(predicted_classes.item())])
