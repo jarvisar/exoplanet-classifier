@@ -54,6 +54,7 @@ To run the exoplanet classifier on a local machine, follow these steps:
 5. Next, enter exoplanet parameters in the format "mass Re,radius Me,density g/cm<sup>3</sup>" to classify the exoplanet:
 
 	`>> 250,13.9,0.512`
+	
 	`jovian`
    
 ### Known Issues & Limitations
