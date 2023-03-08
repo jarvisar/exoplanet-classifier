@@ -7,7 +7,7 @@ from torch.utils.data import Dataset, DataLoader
 label_map = {'asteroidan': 0, 'mercurian': 1, 'subterran': 2, 'terran': 3, 'superterran': 4, 'neptunian': 5, 'jovian': 6}
 
 # Define model
-model = ExoplanetClassifier(num_layers=4)
+model = ExoplanetClassifier(num_layers=1)
 
 while True:
     # Accept user input for planet parameters

@@ -21,8 +21,7 @@ class ExoplanetDataset(Dataset):
         # Get input features (mass, radius, density)
         inputs = torch.tensor(self.df.iloc[idx, :3].astype(float).values, dtype=torch.float32)
 
-        # Normalize input features
-        inputs = (inputs - self.mean) / self.std
+
 
         if self.is_test:
             return inputs # for new data (planet type still unknown)
