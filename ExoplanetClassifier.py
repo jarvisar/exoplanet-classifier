@@ -41,7 +41,7 @@ model = ExoplanetClassifier()
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001)
 
-for epoch in range(10):
+for epoch in range(15):
     running_loss = 0.0
 
     # Train model on training set
@@ -63,10 +63,15 @@ for epoch in range(10):
         loss.backward()
         optimizer.step()
 
-        # Print running loss every 1000 batches
+        # Print running loss and accuracy every 1000 batches
         running_loss += loss.item()
+        _, predicted = torch.max(outputs.data, 1)
+        total = targets.size(0)
+        correct = (predicted == targets).sum().item()
+        accuracy = 100 * correct / total
         if i % 100 == 99:
-            print('[%d, %5d] training loss: %.3f' % (epoch + 1, i + 1, running_loss / 1000))
+            print('[%d] training loss: %.3f training accuracy: %.3f' %
+                (epoch + 1, running_loss / 1000, accuracy))
             running_loss = 0.0
 
     # Evaluate model on validation set
