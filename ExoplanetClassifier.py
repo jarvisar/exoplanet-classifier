@@ -41,7 +41,7 @@ model = ExoplanetClassifier()
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001)
 
-for epoch in range(15):
+for epoch in range(11):
     running_loss = 0.0
 
     # Train model on training set
