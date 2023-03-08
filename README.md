@@ -6,7 +6,7 @@ This is my first PyTorch and deep learning project. Exoplanet classification pre
 
 ### DataLoader
 
-The `DataLoader.py` file defines the `ExoplanetDataset` class, which loads the data from a CSV file and normalizes the input features. The `__getitem__` method returns a tuple containing the input features and target label for each data point. If the dataset is used for testing, only the input features are returned.
+The `DataLoader.py` file defines the `ExoplanetDataset` class, which loads the data from a CSV file and normalizes the input features (planet mass, radius, and density). The `__getitem__` method returns a tuple containing the input features and target label for each data point. If the dataset is used for testing, only the input features are returned.
 
 ### Exoplanet Classifier
 
