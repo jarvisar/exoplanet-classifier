@@ -1,0 +1,11 @@
+mass,radius,density,planet_type
+0.38,0.383,5.43,terran
+0.815,0.99,5.24,subterran
+1.0,1.0,1.0,jovian
+0.63,0.64,3.5,neptunian
+0.2,0.22,3.0,subterran
+1.89,1.16,4.15,superterran
+4.18,1.43,2.26,superterran
+0.05,0.15,3.0,asteroidan
+0.29,0.35,3.0,subterran
+1.49,0.99,1.89,jovian
